@@ -19,6 +19,7 @@ def kalkulator() :
         # Jika operator salah, maka ulangi proses perhitungan
         print('Mohon pilih operator yang disediakan')
         kalkulator()
+        return
 
     # Tampilkan hasilnya
     print(f'Hasilnya {bilangan1} {operator} {bilangan2} = {hasil}')
@@ -29,5 +30,6 @@ def kalkulator() :
         print()
         print('- - - - - - - - - - - - - - - - - - - -', end='')
         kalkulator()
+        return
     
 kalkulator()
